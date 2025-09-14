@@ -25,5 +25,12 @@
     "playground": "tsx src/playground/playground.ts",
     "publish": "npm publish --access public"
   },
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {
+    "@mash-up-web-toolkit/eslint-config": "workspace:*",
+    "@types/node": "^22.13.10",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3",
+    "typescript": "latest"
+  }
 }
