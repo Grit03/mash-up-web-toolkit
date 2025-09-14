@@ -1,0 +1,29 @@
+{
+  "name": "@mash-up-web-toolkit/svg-to-react",
+  "version": "0.0.1",
+  "description": "svg to react component generator used by @mash-up-web-toolkit/command",
+  "type": "module",
+  "author": "Grit03",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mash-up-kr/mash-up-web-toolkit.git",
+    "directory": "packages/cli/svg-to-react"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts",
+    "clean": "rm -rf dist && rm -rf node_modules && rm -rf .turbo",
+    "playground": "tsx src/playground/playground.ts",
+    "publish": "npm publish --access public"
+  },
+  "keywords": []
+}
